@@ -2,21 +2,6 @@ window.onload = function() {
     //descSlideUp();
 };
 
-var menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-var sideNav = document.querySelector('.sideNav');
-menuBtn.addEventListener('click', function(event) {
-    if(!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
-        sideNav.style.width = '250px';
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-        sideNav.style.width = '0px';
-    }
-});
-
 var slideIndex = 0;
 showSlides(slideIndex);
 

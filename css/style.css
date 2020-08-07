@@ -32,42 +32,11 @@ a {
     display: none;
 }
 
-.title .left {
-    text-align: left;
-    font-size: 16px;
+/* footer */
+footer {
+    background-color: #FF9966;
+    padding: 20px 0 20px 0;
 }
-
-.title .right {
-    text-align: right;
-    font-size: 16px;
-}
-
-/* sideNav animation */
-.sideNav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: #FFBFA5;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sideNav a {
-    font-size: 22px;
-    color: #818181;
-    transition: 0.3s;
-    display: block;
-    padding: 10px 10px 10px 20px;
-}
-
-.sideNav a:hover {
-    color: white;
-}
-
 
 /* menu-btn animation */
 .menu-btn {
@@ -121,6 +90,32 @@ a {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
+/* sideNav animation */
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #FFBFA5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideNav a {
+    font-size: 22px;
+    color: #818181;
+    transition: 0.3s;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+.sideNav a:hover {
+    color: white;
+}
+
 /* header menu */
 header {
     position: fixed;
@@ -145,6 +140,23 @@ header .fixed-left-menu {
     top: 10px;
 }
 
+header .fixed-right-menu {
+    z-index: 10;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+header .fixed-right-menu .fa-search {
+    padding: 6px 6px 0 0;
+    font-size: 20px;
+    color: white;
+}
+
+header .fixed-right-menu .fa-search:hover {
+    cursor: pointer;
+}
+
 header .col-12 {
     text-align: center;
     font-size: large;
@@ -153,186 +165,6 @@ header .col-12 {
 header .col-12 a {
     color: white;
     font-weight: bold;
-}
-
-/* myfood_log */
-.myfood_log .container {
-    width: 100%;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 0 10px 0 10px;
-}
-
-.myfood_log .container .add-card {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 3px #FFBFA5;
-    border-style: dashed;
-    color: #FFBFA5;
-    transition: ease 0.5s;
-}
-
-.myfood_log .container .add-card:hover {
-    background-color: #FF9966;
-}
-
-.myfood_log .card {
-    display: inline-block;
-    overflow: hidden;
-}
-
-.myfood_log img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-
-/* carousel-slider */
-.carousel-slider {
-    position: relative;
-}
-
-.carousel-slider .container {
-    position: relative;
-}
-
-.carousel-slider .mySlides:hover {
-    scale: 1.5;
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.carousel-slider img {
-    vertical-align: middle;
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.carousel-slider .main-image {
-    animation: fade-in 2s;
-}
-
-.carousel-slider .prev, 
-.carousel-slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 30%;
-    width: auto;
-    padding: 20px;
-    color: black;
-    font-size: 25px;
-}
-
-.carousel-slider .next {
-    right: 0;
-}
-
-.carousel-slider .prev:hover, 
-.carousel-slider .next:hover {
-    color: #FF9966;
-}
-
-.carousel-slider .numbertext {
-    background-color: rgba(255,255,255,0.5);
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.carousel-slider .col-4 {
-    padding: 0;
-}
-
-.carousel-slider .thumbnail-image {
-    height: 100px;
-    object-fit: cover;
-    opacity: 0.4;
-}
-
-.carousel-slider .selected {
-    opacity: 1.0;
-}
-
-.carousel-slider .thumbnail-image:hover {
-    cursor: pointer;
-}
-
-.carousel-slider #caption {
-    margin: 0;
-    padding: 15px;
-    text-align: center;
-    background-color: #FFBFA5;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-}
-
-/* description */
-.description {
-    padding-top: 57px;
-}
-
-.description .title {
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.description .content {
-    font-size: 13px;
-    padding-left: 20px;
-}
-
-/* image-card */
-.image-card [class*="col-"] {
-    padding: 0;
-}
-
-.image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image-text-container {
-    position: relative;
-    height: 200px;
-    padding: 0;
-    margin: 0;
-}
-
-.image-text-container .top-left {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 10px;
-    background-color: none;
-    transition: ease 0.5s;
-}
-
-.image-card a:hover .image-text-container .top-left {
-    background-color: rgba(255,255,255,0.5);
-}
-
-/* footer */
-footer {
-    background-color: #FF9966;
-    padding: 20px 0 20px 0;
 }
 
 /* mobile */
@@ -356,39 +188,6 @@ footer {
 
     .desktop-page {
         display: block;
-    }
-
-    .title .left {
-        font-size: 24px;
-    }
-    
-    .title .right {
-        font-size: 24px;
-    }
-
-    /* carousel-slider */
-    .carousel-slider img {
-        height: 500px;
-    }
-
-    .carousel-slider .thumbnail-image {
-        height: 200px;
-    }
-
-    /* image-card */
-    .image-text-container {
-        height: 200px;
-    }
-
-    /* myfood_log */
-    .myfood_log .container .add-card {
-        width: 250px;
-        height: 250px;
-    }
-
-    .myfood_log img {
-        width: 250px;
-        height: 250px;
     }
 
     /* footer */
