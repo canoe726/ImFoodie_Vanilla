@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="fixed-left-menu">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a href="#">I'm Foodie</a>
+                </div>
+            </div>
+            <div class="sideNav">
+                <a href="#">I'm Foodie</a>
+                <a href="#">Foodie 캘린더</a>
+                <a href="#">Foodie 로그</a>
+                <a href="#">Foodie 스타</a>
+            </div>
+        </header>
+
+        <section class="description">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title">&#x1F389 I'm Foodie 에 오신것을 환영합니다.</p>
+                    <p class="content">&#x1F60D 나만의 음식 캘린더를 만들어 보세요</p>
+                    <p class="content">&#x2728 음식 로그를 서로 공유해 보세요</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-card">
+            <div class="row">
+                <a href="#">
+                    <div class="image-text-container col-12 col-sm-4">
+                        <div class="top-left">
+                            <h2>Foodie 달력</h2>
+                            <p>나만의 푸드 로그를 작성해보세요</p>
+                            <p>작성하기 <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                        <img src="image/food1.jpg">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="image-text-container col-12 col-sm-4">
+                        <div class="top-left">
+                            <h2>Foodie 스타</h2>
+                            <p>다른 사람의 푸드 로그를 구경 해보세요</p>
+                            <p>구경하기 <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                        <img src="image/food1.jpg">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="image-text-container col-12 col-sm-4">
+                        <div class="top-left">
+                            <h2>Foodie 찾기</h2>
+                            <p>내가 찾고 싶은 글쓴이를 찾아보세요</p>
+                            <p>찾아보기 <i class="fas fa-arrow-right"></i></p>
+                        </div>
+                        <img src="image/food1.jpg">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="myfood_log">
+            <div class="title row">
+                <div class="left col-6">
+                    &#x1F449 내 최신 푸드 로그
+                </div>
+                <div class="right col-6">
+                    <a href="#">All</a>
+                </div>
+            </div>
+            <div class="container row">
+                <div class="card">
+                    <a class="add-card" href="#">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="image/food1.jpg"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel-slider">
+            <div class="title row">
+                <div class="left col-6">
+                    &#x2B50 Star 푸드 로그
+                </div>
+                <div class="right col-6">
+                    <a href="#">All</a>
+                </div>
+            </div>
+            <div class="container">
+                <a href="#">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img class="main-image" src="image/food1.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img class="main-image" src="image/food1.jpg">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img class="main-image" src="image/food1.jpg">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img class="thumbnail-image selected" src="image/food1.jpg" onclick="currentSlide(0)" alt="delicious!">
+                </div>
+                <div class="col-4">
+                    <img class="thumbnail-image" src="image/food1.jpg" onclick="currentSlide(1)" alt="awesome!">
+                </div>
+                <div class="col-4">
+                    <img class="thumbnail-image" src="image/food1.jpg" onclick="currentSlide(2)" alt="tasty!">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <p>CopyRight - YoungBae Kim</p>
+                    <p>Email - canoe918@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
